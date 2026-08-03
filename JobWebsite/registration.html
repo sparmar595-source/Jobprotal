@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | CareerConnect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="auth-page">
+    <section class="auth-card auth-grid">
+      <div class="auth-sidebar">
+        <div class="auth-visual">
+          <img src="images/auth-register.svg" alt="Career registration illustration" />
+        </div>
+      </div>
+      <div class="auth-form-panel">
+        <div class="auth-tabs">
+          <a href="registration.html" class="auth-tab active">Student</a>
+          <a href="registration.html" class="auth-tab">Employer</a>
+        </div>
+        <div class="auth-content">
+          <div class="auth-title-block">
+            <h1>Create an account</h1>
+            <p>Join CareerConnect and start finding the right opportunity faster.</p>
+          </div>
+          <form class="auth-form">
+            <div class="form-group">
+              <label for="register-name">Full Name</label>
+              <input type="text" id="register-name" placeholder="Enter your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="register-email">Email address</label>
+              <input type="email" id="register-email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="register-password">Password</label>
+              <div class="password-field">
+                <input type="password" id="register-password" placeholder="Create a strong password" required />
+                <button type="button" class="password-toggle" data-target="register-password">Show</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="register-password-confirm">Confirm Password</label>
+              <div class="password-field">
+                <input type="password" id="register-password-confirm" placeholder="Re-enter password" required />
+                <button type="button" class="password-toggle" data-target="register-password-confirm">Show</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="register-role">Role</label>
+              <select id="register-role" required>
+                <option value="student">Student</option>
+                <option value="employer">Employer</option>
+              </select>
+            </div>
+            <button class="button button-primary auth-submit">Register</button>
+          </form>
+          <p class="auth-note">Already have an account? <a href="login.html">Log in</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>

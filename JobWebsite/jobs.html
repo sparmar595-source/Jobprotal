@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jobs | CareerConnect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">CareerConnect</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="primary-nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="jobs.html">Find Jobs</a></li>
+          <li><a href="index.html#companies">Companies</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html" class="button button-secondary">Sign Up</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section page-section jobs-page">
+    <div class="container jobs-layout">
+      <aside class="sidebar filters-sidebar">
+        <div class="panel">
+          <h2>Filters</h2>
+          <div class="filter-group">
+            <h3>Job Type</h3>
+            <label><input type="checkbox" checked /> Job</label>
+            <label><input type="checkbox" checked /> Internship</label>
+          </div>
+          <div class="filter-group">
+            <h3>Location</h3>
+            <select>
+              <option>All locations</option>
+              <option>Remote</option>
+              <option>New York, NY</option>
+              <option>San Francisco, CA</option>
+              <option>Austin, TX</option>
+              <option>Chicago, IL</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <h3>Category</h3>
+            <label><input type="checkbox" checked /> IT</label>
+            <label><input type="checkbox" checked /> Marketing</label>
+            <label><input type="checkbox" checked /> Design</label>
+            <label><input type="checkbox" checked /> Finance</label>
+            <label><input type="checkbox" checked /> Sales</label>
+          </div>
+          <div class="filter-group">
+            <h3>Salary Range</h3>
+            <div class="range-wrap">
+              <input type="range" min="30000" max="120000" value="75000" />
+              <div class="range-labels">
+                <span>$30k</span>
+                <span>$120k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="jobs-content">
+        <div class="jobs-topbar">
+          <div class="search-card search-inline">
+            <div class="search-field">
+              <label for="job-search">Search</label>
+              <input type="text" id="job-search" placeholder="Keyword, title or company" />
+            </div>
+            <div class="search-field">
+              <label for="job-location">Location</label>
+              <input type="text" id="job-location" placeholder="City or remote" />
+            </div>
+            <button class="button button-primary">Search</button>
+          </div>
+          <div class="sort-box">
+            <label for="sort-select">Sort by</label>
+            <select id="sort-select">
+              <option>Newest</option>
+              <option>Salary: High to Low</option>
+            </select>
+          </div>
+        </div>
+        <div class="section-heading">
+          <span class="eyebrow">Available positions</span>
+          <h2>Browse jobs and internships</h2>
+        </div>
+        <div id="job-list" class="jobs-grid"></div>
+        <div class="pagination">
+          <button class="page-button active">1</button>
+          <button class="page-button">2</button>
+          <button class="page-button">3</button>
+          <button class="page-button">Next</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand">CareerConnect</a>
+        <p>Online job and internship portal connecting students, graduates, and employers.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="jobs.html">Find Jobs</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: hello@careerconnect.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 CareerConnect. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

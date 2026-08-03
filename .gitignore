@@ -1,0 +1,13 @@
+# Visual Studio / .NET generated folders
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.pdb
+*.log
+
+# OS / editor noise
+Thumbs.db
+.DS_Store

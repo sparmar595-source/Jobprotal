@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard | CareerConnect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header dashboard-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">CareerConnect</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="dashboard-page">
+    <div class="container dashboard-layout">
+      <aside class="dashboard-sidebar">
+        <div class="panel sidebar-panel">
+          <h2>Student Panel</h2>
+          <nav class="dashboard-nav">
+            <a href="#">Overview</a>
+            <a href="#">My Applications</a>
+            <a href="#">Saved Jobs</a>
+            <a href="#">Profile</a>
+            <a href="#">Logout</a>
+          </nav>
+        </div>
+      </aside>
+
+      <section class="dashboard-main">
+        <div class="dashboard-hero panel">
+          <div>
+            <p class="eyebrow">Welcome back</p>
+            <h1>Student Dashboard</h1>
+            <p>Track your applications, saved jobs, and interview progress.</p>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card panel">
+            <h3>Applications Sent</h3>
+            <p>24</p>
+          </div>
+          <div class="stat-card panel">
+            <h3>Interviews</h3>
+            <p>5</p>
+          </div>
+          <div class="stat-card panel">
+            <h3>Saved Jobs</h3>
+            <p>12</p>
+          </div>
+        </div>
+
+        <div class="panel recent-applications">
+          <div class="section-heading">
+            <h2>Recent Applications</h2>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Position</th>
+                  <th>Company</th>
+                  <th>Date Applied</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Frontend Developer</td>
+                  <td>SparkCode</td>
+                  <td>Jul 18</td>
+                  <td><span class="status-badge status-applied">Applied</span></td>
+                </tr>
+                <tr>
+                  <td>Marketing Intern</td>
+                  <td>GrowthRise</td>
+                  <td>Jul 12</td>
+                  <td><span class="status-badge status-interview">Interview</span></td>
+                </tr>
+                <tr>
+                  <td>Data Analyst</td>
+                  <td>Vanta Networks</td>
+                  <td>Jul 05</td>
+                  <td><span class="status-badge status-selected">Selected</span></td>
+                </tr>
+                <tr>
+                  <td>UX Designer</td>
+                  <td>NuVista Labs</td>
+                  <td>Jun 28</td>
+                  <td><span class="status-badge status-rejected">Rejected</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

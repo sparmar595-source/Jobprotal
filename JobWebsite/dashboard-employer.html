@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employer Dashboard | CareerConnect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header dashboard-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">CareerConnect</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="dashboard-page">
+    <div class="container dashboard-layout">
+      <aside class="dashboard-sidebar">
+        <div class="panel sidebar-panel">
+          <h2>Employer Panel</h2>
+          <nav class="dashboard-nav">
+            <a href="#">Overview</a>
+            <a href="#">My Job Posts</a>
+            <a href="#">Applicants</a>
+            <a href="#">Company Profile</a>
+            <a href="#">Logout</a>
+          </nav>
+        </div>
+      </aside>
+
+      <section class="dashboard-main">
+        <div class="dashboard-hero panel">
+          <div>
+            <p class="eyebrow">Welcome back</p>
+            <h1>Employer Dashboard</h1>
+            <p>Manage job postings, review applicants, and grow your hiring pipeline.</p>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card panel">
+            <h3>Active Posts</h3>
+            <p>8</p>
+          </div>
+          <div class="stat-card panel">
+            <h3>Total Applicants</h3>
+            <p>172</p>
+          </div>
+          <div class="stat-card panel">
+            <h3>New This Week</h3>
+            <p>14</p>
+          </div>
+        </div>
+
+        <div class="panel recent-applications">
+          <div class="dashboard-table-header">
+            <div>
+              <h2>Posted Jobs</h2>
+              <p>Overview of your current job openings and candidate interest.</p>
+            </div>
+            <button class="button button-primary" id="post-job-button">Post a New Job</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Job Title</th>
+                  <th>Location</th>
+                  <th>Applicants</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Senior Product Manager</td>
+                  <td>Remote</td>
+                  <td>34</td>
+                  <td><span class="status-badge status-applied">Open</span></td>
+                </tr>
+                <tr>
+                  <td>Engineering Lead</td>
+                  <td>Chicago, IL</td>
+                  <td>22</td>
+                  <td><span class="status-badge status-interview">Interviewing</span></td>
+                </tr>
+                <tr>
+                  <td>Sales Growth Associate</td>
+                  <td>New York, NY</td>
+                  <td>48</td>
+                  <td><span class="status-badge status-selected">Shortlisted</span></td>
+                </tr>
+                <tr>
+                  <td>UX Researcher</td>
+                  <td>San Francisco, CA</td>
+                  <td>18</td>
+                  <td><span class="status-badge status-applied">Open</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div class="modal-backdrop" id="post-job-modal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2>Post a New Job</h2>
+        <button class="close-modal" id="close-job-modal" aria-label="Close modal">×</button>
+      </div>
+      <form id="post-job-form" class="application-form">
+        <div class="form-group">
+          <label for="job-title">Job Title</label>
+          <input type="text" id="job-title" required />
+        </div>
+        <div class="form-group">
+          <label for="job-location">Location</label>
+          <input type="text" id="job-location" required />
+        </div>
+        <div class="form-group">
+          <label for="job-type">Job Type</label>
+          <select id="job-type" required>
+            <option>Full-Time</option>
+            <option>Internship</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="job-description">Description</label>
+          <textarea id="job-description" rows="4" required></textarea>
+        </div>
+        <button class="button button-primary">Post Job</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

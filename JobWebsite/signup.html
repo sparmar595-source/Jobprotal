@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up | CareerConnect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="auth-page">
+    <section class="auth-card auth-grid">
+      <div class="auth-sidebar">
+        <div class="auth-visual">
+          <img src="images/auth-register.svg" alt="Career signup illustration" />
+        </div>
+      </div>
+      <div>
+        <div class="auth-tabs">
+          <a href="signup.html" class="auth-tab active">Student</a>
+          <a href="signup.html" class="auth-tab">Employer</a>
+        </div>
+        <div class="auth-content">
+          <h1>Create your account</h1>
+          <p>Join CareerConnect and start applying for jobs and internships today.</p>
+          <form>
+          <div class="form-group">
+            <label for="signup-name">Full Name</label>
+            <input type="text" id="signup-name" required />
+          </div>
+          <div class="form-group">
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" required />
+          </div>
+          <div class="form-group">
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" required />
+          </div>
+          <div class="form-group">
+            <label for="signup-password-confirm">Confirm Password</label>
+            <input type="password" id="signup-password-confirm" required />
+          </div>
+          <div class="form-group">
+            <label for="signup-role">Role</label>
+            <select id="signup-role" required>
+              <option value="student">Student</option>
+              <option value="employer">Employer</option>
+            </select>
+          </div>
+          <button class="button button-primary">Sign Up</button>
+        </form>
+        <p class="auth-note">Already have an account? <a href="login.html">Login</a></p>
+      </div>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>
